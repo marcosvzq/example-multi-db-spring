@@ -1,8 +1,8 @@
-package com.example.multidb.examplemultidb.card.web.rest;
+package com.example.multidb.examplemultidb.web.rest;
 
 import com.example.multidb.examplemultidb.card.model.Card;
 import com.example.multidb.examplemultidb.card.service.CardService;
-import com.example.multidb.examplemultidb.card.web.util.PaginationUtil;
+import com.example.multidb.examplemultidb.web.util.PaginationUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;

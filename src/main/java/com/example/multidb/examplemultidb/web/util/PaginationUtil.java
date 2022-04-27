@@ -1,4 +1,4 @@
-package com.example.multidb.examplemultidb.card.web.util;
+package com.example.multidb.examplemultidb.web.util;
 
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpHeaders;
