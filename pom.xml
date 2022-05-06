@@ -41,6 +41,7 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
+            <version>42.3.3</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
@@ -53,6 +54,13 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.zalando/problem-spring-web -->
+        <dependency>
+            <groupId>org.zalando</groupId>
+            <artifactId>problem-spring-web</artifactId>
+            <version>0.27.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
