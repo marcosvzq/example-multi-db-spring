@@ -6,16 +6,19 @@ import org.hibernate.Hibernate;
 import javax.persistence.*;
 import java.util.Objects;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Getter
 @Setter
 @ToString
-@RequiredArgsConstructor
 @Table(name = "CARDS")
 public class Card {
 
+    public static final String ENTITYNAME = "CARD";
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
 

@@ -27,7 +27,7 @@ import java.util.Objects;
 public class MemberDataSourceConfiguration {
 
     @Bean(name = "memberHibernateProps")
-    @ConfigurationProperties(prefix = "member.hibernate")
+    @ConfigurationProperties(prefix = "member.jpa")
     public Map<String, Object> hibernateProps(){
         return new HashMap<>();
     }

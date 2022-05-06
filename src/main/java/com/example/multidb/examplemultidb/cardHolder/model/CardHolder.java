@@ -4,16 +4,17 @@ import lombok.*;
 
 import javax.persistence.*;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Getter
 @Setter
 @ToString
-@RequiredArgsConstructor
 @Table(name = "CARD_HOLDER")
 public class CardHolder {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String memberId;
     private String cardNumber;
