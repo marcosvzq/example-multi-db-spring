@@ -31,7 +31,7 @@ public class MemberResource {
     public ResponseEntity<List<Member>> getAllMember(Pageable pageable){
         log.debug("Enter REST to get a page of Member");
         Page<Member> page = memberService.getAllMember(pageable);
-        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "member");
+        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "members");
         return ResponseEntity.ok().headers(headers).body(page.getContent());
     }
 }

@@ -25,4 +25,9 @@ public class CardService {
         return cardRepositiry.findAll(pageable);
     }
 
+    public Card save(Card card){
+        log.debug("Enter services to save Card");
+        return cardRepositiry.save(card);
+    }
+
 }
